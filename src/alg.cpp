@@ -2,11 +2,12 @@
 
 int cbinsearch(int *arr, int size, int value) {
   //  поместить сюда реализацию алгоритма
-  int m = 0;
-    for (int j = 0; j <= size; j++) {
-      if(*(arr+j) == value);
-      m+=1;
+  int k = 0;
+  for (int i = 0; i < size; i++) {
+    if (value == arr[i]) {
+      k++;
+    }
   }
-  return m;
+  return k;
   return 0; // если ничего не найдено
 }
